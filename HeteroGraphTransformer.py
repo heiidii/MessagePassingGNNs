@@ -5,8 +5,7 @@ import dgl.function as fn
 import torch.nn.functional as F
 import math
 import dgl
-from deeph3.models.AntibodySCAntigenGATComplexAlt.dgl_mp_functions \
-    import apply_topk_edges, reduce_topk, reduce_topk_min
+from dgl_mp_functions import apply_topk_edges, reduce_topk, reduce_topk_min
 
 class GTransformerHetero(nn.Module):
     '''
