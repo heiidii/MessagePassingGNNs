@@ -2,16 +2,12 @@ import copy
 import torch
 import torch.nn as nn
 from torch.nn.functional import dropout
-from deeph3.graph_models.functions import *
-from deeph3.models.AntibodySCAntigenGATComplexAlt.EdgeLayers\
-                    import EdgeNetHomoLayer, EdgeNetLayer, EdgeNetSimpleLayer,\
+from graph_models.functions import *
+from EdgeLayers import EdgeNetHomoLayer, EdgeNetLayer, EdgeNetSimpleLayer,\
                     EdgeNetSimpleHomoLayer, EdgeNetfromEdgeHomoLayer
-from deeph3.models.AntibodySCAntigenGATComplexAlt.HomoGraphTransformer \
-                    import GTransformerHomo
-from deeph3.models.AntibodySCAntigenGATComplexAlt.GraphLayers\
-                    import HeteroGATConv, HomoGAT, MultiLayerHeteroGT, MultiLayerHomoGT
-from deeph3.models.AntibodySCAntigenGATComplexAlt.HeteroGraphTransformer \
-    import GTransformerHetero
+from HomoGraphTransformer import GTransformerHomo
+from GraphLayers import HeteroGATConv, HomoGAT, MultiLayerHeteroGT, MultiLayerHomoGT
+from HeteroGraphTransformer import GTransformerHetero
 
 class SuSNEGBlock(nn.Module):
     """
